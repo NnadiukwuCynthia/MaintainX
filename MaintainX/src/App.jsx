@@ -1,5 +1,4 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Sidebar from "./components/Sidebar";
 import WorkOrder from './pages/workOrder';
 import Purchase from './pages/Purchase';
 import Reporting from './pages/Reporting';
@@ -13,11 +12,12 @@ import Location from './pages/Location'
 import PartInventory from "./pages/PartInventory";
 import Asset from "./pages/Asset";
 import Vendor from './pages/Vendor';
+import Root from './components/root';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Sidebar/>,
+    element: <Root/>,
 
     children: [
       {

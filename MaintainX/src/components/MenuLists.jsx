@@ -9,20 +9,20 @@
 
  const MenuLists = () => {
    return (
-     <div>
-        <NavLink className={({isActive}) => isActive ? 'active' : 'menuLists'} to='/workorders'> <span><FaInbox/></span>Work Order</NavLink>
-        <NavLink className={({isActive}) => isActive ? 'active' : 'menuLists'} to='/purchaseorders'><span><FaRegFileAlt/></span>Purchase Orders</NavLink>
-        <NavLink className={({isActive}) => isActive ? 'active' : 'menuLists'} to='/reporting'><span><FiBarChart2/></span>Reporting</NavLink>
-        <NavLink className={({isActive}) => isActive ? 'active' : 'menuLists'} to='/request'><span><HiMiniInboxArrowDown/></span>Request</NavLink>
-        <NavLink className={({isActive}) => isActive ? 'active' : 'menuLists'} to='/assets'><span><FaCompressArrowsAlt/></span> Assets</NavLink>
-        <NavLink className={({isActive}) => isActive ? 'active' : 'menuLists'} to='/messages'> <span><BiSolidMessageRounded/></span>Messages</NavLink>
-        <NavLink className={({isActive}) => isActive ? 'active' : 'menuLists'} to='/categories'><span><BiSolidPurchaseTagAlt/></span>Categories</NavLink>
-        <NavLink className={({isActive}) => isActive ? 'active' : 'menuLists'} to='/partinventory'><span><FaGears/></span>Part Inventory</NavLink>
-        <NavLink className={({isActive}) => isActive ? 'active' : 'menuLists'} to='/procedureliberary'><span><HiMiniListBullet/></span>Procedure Liberary</NavLink>
-        <NavLink className={({isActive}) => isActive ? 'active' : 'menuLists'} to='/meters'><span><SlSpeedometer/></span>Meter</NavLink>
-        <NavLink className={({isActive}) => isActive ? 'active' : 'menuLists'} to= '/location'><span><SlLocationPin/></span>Location</NavLink>
-        <NavLink className={({isActive}) => isActive ? 'active' : 'menuLists'} to= '/teams'><span><FiUsers/></span>Teams / Users</NavLink>
-        <NavLink className={({isActive}) => isActive ? 'active' : 'menuLists'} to= '/vendor'><span><ImDrawer/></span>Vendor</NavLink>
+     <div className="menuList">
+        <NavLink className={({isActive}) => isActive ? 'menuList__active' : 'menuList__menuItems'} to='/workorders'><FaInbox/>Work Order</NavLink>
+        <NavLink className={({isActive}) => isActive ? 'menuList__active' : 'menuList__menuItems'} to='/purchaseorders'><FaRegFileAlt/>Purchase Orders</NavLink>
+        <NavLink className={({isActive}) => isActive ? 'menuList__active' : 'menuList__menuItems'} to='/reporting'><FiBarChart2/>Reporting</NavLink>
+        <NavLink className={({isActive}) => isActive ? 'menuList__active' : 'menuList__menuItems'} to='/request'><HiMiniInboxArrowDown/>Request</NavLink>
+        <NavLink className={({isActive}) => isActive ? 'menuList__active' : 'menuList__menuItems'} to='/assets'><FaCompressArrowsAlt/> Assets</NavLink>
+        <NavLink className={({isActive}) => isActive ? 'menuList__active' : 'menuList__menuItems'} to='/messages'> <BiSolidMessageRounded/>Messages</NavLink>
+        <NavLink className={({isActive}) => isActive ? 'menuList__active' : 'menuList__menuItems'} to='/categories'><BiSolidPurchaseTagAlt/>Categories</NavLink>
+        <NavLink className={({isActive}) => isActive ? 'menuList__active' : 'menuList__menuItems'} to='/partinventory'><FaGears/>Part Inventory</NavLink>
+        <NavLink className={({isActive}) => isActive ? 'menuList__active' : 'menuList__menuItems'} to='/procedureliberary'><HiMiniListBullet/>Procedure Liberary</NavLink>
+        <NavLink className={({isActive}) => isActive ? 'menuList__active' : 'menuList__menuItems'} to='/meters'><SlSpeedometer/>Meter</NavLink>
+        <NavLink className={({isActive}) => isActive ? 'menuList__active' : 'menuList__menuItems'} to= '/location'><SlLocationPin/>Location</NavLink>
+        <NavLink className={({isActive}) => isActive ? 'menuList__active' : 'menuList__menuItems'} to= '/teams'><FiUsers/>Teams / Users</NavLink>
+        <NavLink className={({isActive}) => isActive ? 'menuList__active' : 'menuList__menuItems'} to= '/vendor'><ImDrawer/>Vendor</NavLink>
      </div>
    )
  }

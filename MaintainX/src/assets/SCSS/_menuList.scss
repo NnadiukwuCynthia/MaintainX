@@ -1,0 +1,17 @@
+@use './color' as color;
+
+.menuList{
+    width: 250px;
+    height: 602px;
+    
+    &__menuItems{
+        display: flex;
+        padding-block: 5px;
+    }
+    
+    &__active{
+        display: flex;
+        color: color.$custom-blue;
+        background-color: color.$shadow-color;
+    }
+}

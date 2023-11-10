@@ -1,13 +1,12 @@
-import { Outlet } from "react-router-dom"
+
 import MenuLists from "./MenuLists"
 
 
 const Sidebar = () => {
   return (
-    <div>
-      <div><MenuLists/></div>
-
-      <Outlet/>
+    <div className="sidebar">
+      <img src="../../assets/logo.svg" alt="" className="sidebar__logo"/>
+      <MenuLists/>
     </div>
   )
 }
