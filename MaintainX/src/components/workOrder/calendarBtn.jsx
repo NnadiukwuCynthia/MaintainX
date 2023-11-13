@@ -1,13 +1,22 @@
+// import { useState } from 'react';
 // import {TiCalendarOutline} from 'react-icons/ti'
-// import Button from './Button';
+// import Button from '../Button';
+// import CalendarData from './calendar';
 
 
 // const CalendarBtn = () => {
-//     // const HandleClick = () => {
-//     //     console.log('button clicked');
-//     // }
-//     return(
     
+//     return(
+//     <>
+//         <Button onClick= {toggleCalendar}>
+//         <TiCalendarOutline/>
+//         </Button>
+//     {showCalendar && (
+//         <div>
+//         <CalendarData/>
+//         </div>
+//     )}
+//     </>
 //     )
     
 // }
