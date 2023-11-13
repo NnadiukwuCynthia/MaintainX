@@ -2,9 +2,21 @@
 
 .header{
     display: flex;
+    width: 100%;
     padding-block-start: 6px;
 
-    &__text{
-        @extend %large-heading
+    &__container{
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+
+        &__text{
+            width: 249px;
+            @extend %large-heading;
+        }
+    }
+    &__btnContainer{
+        display: flex;
+        justify-content: space-around;
     }
 }

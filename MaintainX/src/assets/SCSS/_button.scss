@@ -1,0 +1,12 @@
+@use './color' as color;
+@use './mixins';
+
+.headerBtn{
+    @include mixins.btn;
+
+    &:hover{
+        color: color.$custom-blue;
+        background-color: color.$shadow-blue;
+        transition: .30s ease-in-out;
+    }
+}
