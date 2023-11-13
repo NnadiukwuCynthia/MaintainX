@@ -1,17 +1,47 @@
 @use './color' as color;
+@use './placeholder';
 
 .menuList{
     width: 250px;
     height: 602px;
+
+    a{
+        display: flex;
+        align-items: center;
+        padding: 1.20rem 0.5rem;
+        margin-block: .5rem;
+        text-decoration: none;
+    }
     
     &__menuItems{
-        display: flex;
-        padding-block: 5px;
+        @extend %menu-text;
+        svg{
+            font-size: 20px;
+            margin-inline-end: 0.75rem;
+            color: color.$icon-blue;
+        }
+        &:hover{
+            background-color: color.$shadow-color;
+            transition: 1s ease-in-out;
+        }
+      
     }
     
     &__active{
-        display: flex;
+        
+        @extend %menu-text;
         color: color.$custom-blue;
-        background-color: color.$shadow-color;
+        background-color: color.$shadow-blue;
+
+        svg{
+            font-size: 20px;
+            margin-inline-end: 0.75rem;
+            color: color.$custom-blue;
+        }
+    }
+
+    hr{
+        width: 230px;
+        opacity: .2;
     }
 }

@@ -1,0 +1,21 @@
+@use './fonts' as font;
+@use './color'  as color;
+
+/*Large text*/
+%large-heading{
+    font-family: font.$secondary-ff;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 1; 
+}
+
+/* Menu Text*/
+%menu-text{
+    color: color.$black;
+    font-family: font.$primary-ff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1
+}

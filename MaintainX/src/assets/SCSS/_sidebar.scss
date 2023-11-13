@@ -1,8 +1,12 @@
 .sidebar{
     width: 300px;
-    padding: 2.063rem 1.188rem;
+    height: 844px;
+    padding: 2.063rem 1.188rem 0;
+    overflow-y: scroll;
 
     &__logo{
-        padding-block-end: 1.188rem;
+        width: 230px;
+        height: 170px; 
+        padding-block-end: 0.875rem;
     }
 }

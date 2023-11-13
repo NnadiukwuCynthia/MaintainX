@@ -1,7 +1,10 @@
+import Header from "../components/workOrder/header"
 
 const WorkOrder = () => {
   return (
-    <div>workOrder</div>
+    <div className="workOrder">
+      <Header/>
+    </div>
   )
 }
 
