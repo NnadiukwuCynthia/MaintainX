@@ -1,7 +1,10 @@
+@use './color' as color;
+@use './fonts' as fonts;
 @use './placeholder';
 
 .header{
     display: flex;
+    justify-content: space-between;
     width: 100%;
     padding-block-start: 6px;
 
@@ -14,9 +17,42 @@
             width: 249px;
             @extend %large-heading;
         }
+        &__btnContainer{
+            display: flex;
+            justify-content: space-around;
+        }
     }
-    &__btnContainer{
+    &__filterContainer{
+        width: 500px;
+    }
+}
+.filter{
+    display: flex;
+    justify-content: space-between;
+
+    &__input{
+        font-family: fonts.$primary-ff;
+        font-size: 12px;
+        border-radius: 5px;  
+        width: 315px;
+        height: 40px;
+        padding: 0.5rem 1.25rem;
+        margin-inline-end: 1.063rem;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    &__button{
+        width: 220px;
+        height: 40px;
+        background-color: color.$custom-blue;
+        @extend %filterBtn; 
+        border: none;
+        border-radius: 5px; 
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
     }
 }

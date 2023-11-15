@@ -1,0 +1,27 @@
+@use './color' as color;
+
+.todo{
+    display: flex;
+    padding: 0 0.938rem 0 ;
+    margin-block-start: 1.813rem;
+
+        &__saved-Content{
+            width: 550px;
+            height: 809px;
+            margin-inline-end: 1.063rem;
+            border-radius: 10px;
+            border: 1px solid color.$border-color;
+
+        }
+        &__saved-ContentFilter{
+            height: 47px;
+            border-bottom: 1px solid color.$border-color;
+        }
+
+        &__create-content{
+            width: 654px;
+            height: 809px; 
+            border-radius: 10px;
+            border: 1px solid color.$border-color; 
+        }
+}          
