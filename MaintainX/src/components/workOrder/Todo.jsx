@@ -1,3 +1,4 @@
+import TodoForm from "./TodoForm";
 import TodoBtn from "./todoBtn"
 import TodoFilter from './todoFilter';
 
@@ -10,7 +11,9 @@ const Todo = () => {
             <TodoFilter  />
             </div>
         </div>
-        <div className="todo__create-content"></div>
+        <div className="todo__create-content">
+          <TodoForm/>
+        </div>
     </div>
   )
 }

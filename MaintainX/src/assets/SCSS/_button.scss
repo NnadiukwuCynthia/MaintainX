@@ -25,3 +25,17 @@
     }
 
 }
+
+.procedureBtn{
+    @include mixins.btn;
+    width: 150px;
+    height: 40px;
+    @extend %large-heading;
+    font-size: 14px;
+    color: color.$custom-blue;
+    border: 1px solid color.$custom-blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.313rem 0.625rem;
+}
