@@ -2,6 +2,8 @@
 @use './color' as color;
 
 .newWorkOrder{
+    height: 809px;
+    overflow-y: scroll;
 
     &__bigtext{
         font-weight: 600;

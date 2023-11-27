@@ -1,3 +1,5 @@
+import AssignTo from "./AssignTo";
+import Dateschedule from "./Dateschedule";
 import ImageDrop from "./ImageDrop";
 import { PiListBulletsFill, PiPlusBold } from "react-icons/pi";
 
@@ -22,6 +24,8 @@ const TodoForm = () => {
             <button className="newWorkOrder__procedureContainer__content__button procedureBtn"><PiPlusBold/> Add Procedure</button>
           </div>
         </div>
+        <AssignTo/>
+        <Dateschedule/>
     </form>
   )
 }
