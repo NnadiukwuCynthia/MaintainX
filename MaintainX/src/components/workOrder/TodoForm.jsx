@@ -2,7 +2,7 @@ import AssignTo from "./AssignTo";
 import Dateschedule from "./Dateschedule";
 import ImageDrop from "./ImageDrop";
 import { PiListBulletsFill, PiPlusBold } from "react-icons/pi";
-import NewProcedure from './NewProcedure';
+// import NewProcedure from './NewProcedure';
 
 const TodoForm = () => {
   return (
@@ -27,7 +27,7 @@ const TodoForm = () => {
         </div>
         <AssignTo/>
         <Dateschedule/>
-        <NewProcedure/>
+        {/* <NewProcedure/> */}
     </form>
   )
 }
