@@ -4,13 +4,14 @@ import Contact from "./Contact"
 const Root = () => {
   return (
     <div className="root">
-    <div>
+    <div className="root__page">
     <Sidebar/>
     
     <Contact/>
     </div>
-
+    <div className="root__content">
     <Outlet/>
+    </div>
     </div>
   )
 }

@@ -3,6 +3,7 @@
 @use './fonts';
 @use './placeholder';
 @use './root';
+@use './app';
 @use './color';
 @use './mixins';
 @use './button';
@@ -17,3 +18,4 @@
 @use './assignTo';
 @use './Dateschedule';
 @use './newProcedure.scss';
+@use './filterBtn';

@@ -9,9 +9,10 @@
     padding-block-start: 6px;
 
     &__container{
-        width: 400px;
+        width: 50%;
         display: flex;
         justify-content: space-between;
+        margin-inline-end: 1rem;
 
         &__text{
             width: 249px;
@@ -23,7 +24,7 @@
         }
     }
     &__filterContainer{
-        width: 500px;
+        width: 50%;
     }
 }
 .filter{

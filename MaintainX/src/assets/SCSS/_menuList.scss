@@ -2,13 +2,11 @@
 @use './placeholder';
 
 .menuList{
-    width: 250px;
-    height: 602px;
-
+  
     a{
         display: flex;
         align-items: center;
-        padding: 1.20rem 0.5rem;
+        padding: 1rem 0.5rem;
         margin-block: .5rem;
         text-decoration: none;
     }
@@ -16,7 +14,7 @@
     &__menuItems{
         @extend %menu-text;
         svg{
-            font-size: 20px;
+            font-size: 18px;
             margin-inline-end: 0.75rem;
             color: color.$icon-blue;
         }

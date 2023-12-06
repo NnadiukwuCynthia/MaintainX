@@ -1,0 +1,23 @@
+
+.filterBtns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-block-start: 1.25rem;
+
+    &__threeBtn{
+        width: 55%;
+        display: flex;
+        justify-content: space-between;
+
+        &__button{
+            width: 150px;
+            height: 35px;
+            margin-inline-end: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    }
+}
