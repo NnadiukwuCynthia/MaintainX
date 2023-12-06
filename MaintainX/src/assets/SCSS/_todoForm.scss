@@ -14,13 +14,13 @@
     }
 
     &__name{
-        width: 518px;
+        width: 93%;
         padding: 1.75rem 1.438rem 0;
         @extend %menu-text;
         font-weight: 600;
         margin: 0 3.938rem 0 1.438rem;
         border: none;
-        border-bottom: 2px solid color.$custom-blue;
+        border-bottom: 2px solid color.$border-color;
 
         &:focus{
             outline: unset;
@@ -37,6 +37,7 @@
         }
 
         &__textarea{
+            width: 93%;
             margin: 0 3.938rem 0 1.438rem;
             padding: 0.5rem;
             @extend %menu-text;

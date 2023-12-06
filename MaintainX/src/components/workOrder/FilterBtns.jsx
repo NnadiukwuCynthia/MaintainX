@@ -1,18 +1,17 @@
-import { FiUser, FiSettings } from "react-icons/fi";
+import { FiUser, FiClock } from "react-icons/fi";
 import { GoPlus } from "react-icons/go";
 import { VscWand } from "react-icons/vsc";
-
-
+import { PiWarningDiamondFill } from "react-icons/pi";
 
 
 const FilterBtns = () => {
   return ( 
     <div className="filterBtns">
         <div className="filterBtns__threeBtn">
-            <button className="filterBtns__threeBtn__button"><FiUser/> Assigned To</button>
-            <button className="filterBtns__threeBtn__button"><FiSettings/> Assigned To</button>
-            <button className="filterBtns__threeBtn__button"><FiSettings/>Priority</button>
-            <button className="filterBtns__threeBtn__button"><GoPlus/> Add Filter</button>
+            <button className="threeBtn__button"><FiUser className="threeBtn__button__icon"/> Assigned To</button>
+            <button className="threeBtn__button"><FiClock className="threeBtn__button__icon"/> Due Date</button>
+            <button className="threeBtn__button"><PiWarningDiamondFill className="threeBtn__button__icon"/>Priority</button>
+            <button className="threeBtn__button"><GoPlus className="threeBtn__button__icon"/> Add Filter</button>
         </div>
         <div className="filterBtns__oneBtn">
             <button className="filterBtns__oneBtn__button"><VscWand/>My Filters</button>

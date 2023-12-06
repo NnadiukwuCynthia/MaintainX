@@ -40,3 +40,33 @@
     padding: 0.313rem 0.625rem;
     border-radius: 5px;
 }
+
+.threeBtn__button{
+    @extend %todoBtn-text;
+    font-size: 14px;
+    width: 150px;
+    height: 35px;
+    margin-inline-end: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid color.$border-color;
+    border-radius: 7px;
+
+    &:nth-child(2){
+        width: 116px;
+    }
+    &:nth-child(3){
+        width: 100px;
+    }
+    &:nth-child(4){
+        border: none;
+    }
+
+    &__icon{
+        font-size: 20px;
+        font-weight: bold;
+        padding-inline-end: 2px;
+        color: color.$custom-blue;
+    }
+}
