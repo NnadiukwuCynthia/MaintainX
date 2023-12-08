@@ -14,7 +14,7 @@ const FilterBtns = () => {
             <button className="threeBtn__button"><GoPlus className="threeBtn__button__icon"/> Add Filter</button>
         </div>
         <div className="filterBtns__oneBtn">
-            <button className="filterBtns__oneBtn__button"><VscWand/>My Filters</button>
+            <button className="oneBtn__button"><VscWand className="oneBtn__button__icon"/>My Filters</button>
         </div>
     </div>      
       )

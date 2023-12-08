@@ -34,7 +34,7 @@ const ImageDrop = () => {
             onDrop={handleDrop}
             onDragOver={handleDragOver}
           >
-            <FaCamera className='camIcon'/>
+            <FaCamera className='dropzone__camIcon'/>
             <p  className="dropzone__text">Add or drag pictures</p>
           </div>
     

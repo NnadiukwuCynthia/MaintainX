@@ -44,17 +44,19 @@
 .threeBtn__button{
     @extend %todoBtn-text;
     font-size: 14px;
+    font-weight: 500;
     width: 150px;
-    height: 35px;
+    height: 40px;
     margin-inline-end: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border: 1px solid color.$border-color;
     border-radius: 7px;
+    color: color.$filterBtn-color;
 
     &:nth-child(2){
-        width: 116px;
+        width: 126px;
     }
     &:nth-child(3){
         width: 100px;
@@ -62,6 +64,28 @@
     &:nth-child(4){
         border: none;
     }
+
+    &__icon{
+        font-size: 20px;
+        font-weight: bold;
+        padding-inline-end: 2px;
+        color: color.$custom-blue;
+    }
+}
+
+.oneBtn__button{
+    @extend %todoBtn-text;
+    font-size: 14px;
+    font-weight: 500;
+    width: 120px;
+    height: 40px;
+    margin-inline-end: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid color.$border-color;
+    border-radius: 7px;
+    color: color.$filterBtn-color;
 
     &__icon{
         font-size: 20px;
