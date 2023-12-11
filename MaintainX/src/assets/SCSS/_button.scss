@@ -12,20 +12,6 @@
     }
 }
 
-.todoBtn{
-    @extend %todoBtn-text;
-    @include mixins.btn;
-    width: 50%;
-    font-size: 14px;
-    border-bottom: 1px solid color.$border-color;
-    padding: 1.563rem 0 0.938rem;
-
-    &:active{
-        color: color.$custom-blue;
-    }
-
-}
-
 .procedureBtn{
     @include mixins.btn;
     width: 150px;

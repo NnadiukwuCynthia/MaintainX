@@ -1,14 +1,18 @@
 import { useState } from "react";
-import styles from "../../assets/SCSS/tabBtn.modules.css"
 
 const TodoBtn = () => {
 
   const {eachTab, setEachTab} = useState(0); 
 
   return (
-    <div>
-        <button className={eachTab === 0 ? `${styles.tab} ${styles.active}` : styles.tab} onClick={() => setEachTab(0)}>To Do</button>
-        <button className={eachTab === 1 ? `${styles.tab} ${styles.active}` : styles.tab} onClick={() => setEachTab(1)}>Done</button>
+    <div className="Tabby">
+        <div className="Tabby__btnCont">
+        <button className={eachTab === 0 ? "activeBtn" : "tab"} onClick={() => setEachTab(0)}>To Do</button>
+        <button className={eachTab === 1 ? "activeBtn" : 'tab'} onClick={() => setEachTab(1)}>Done</button>
+        </div>
+        <div className="tabsContents">
+          <div className={ eachTab === 0 ? 'activeTab': 'tab__content'}></div>
+        </div>
     </div>
   )
 }

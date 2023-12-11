@@ -1,0 +1,25 @@
+@use './placeholder';
+@use './mixins';
+@use './color' as color;
+
+.tabby{
+
+    &__btnCont{
+        width: 100%;
+        display: flex;
+    }
+}
+
+.tab{
+    @extend %todoBtn-text;
+    @include mixins.btn;
+    width: 50%;
+    font-size: 14px;
+    border-bottom: 1px solid color.$border-color;
+    padding: 1.563rem 0 0.938rem;   
+}
+.activeBtn{
+    position: relative;
+    filter: none;
+       
+}
