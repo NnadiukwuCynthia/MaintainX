@@ -2,8 +2,8 @@ import { Calendar } from "antd"
 
 const CalendarData = () => {
   return (
-    <div>
-        <Calendar/>
+    <div className="calendarContainer">
+        <Calendar className="calendarContainer__calendar"/>
     </div>
   )
 }
