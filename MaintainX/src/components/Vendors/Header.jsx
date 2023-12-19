@@ -1,12 +1,17 @@
 import { useState } from 'react';
 import { GoColumns, GoTable } from 'react-icons/go';
-import { IoCalendarClearOutline } from 'react-icons/io5';
 import Button from '../Button';
 import PropTypes from 'prop-types';
-import Filter from './Filter';
+import Filter from './headerFilter';
 
 const Header = ({ setShowIconContent }) => {
-  const [activeButton, setActiveButton] = useState('todo');
+  const [activeButton, setActiveButton] = useState('vendors');
+  const [showForm, setShowForm] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowForm(true);
+    console.log("button clicked")
+  };
 
   const toggleIconContent = (action) => {
     setShowIconContent(action);
@@ -16,11 +21,11 @@ const Header = ({ setShowIconContent }) => {
   return (
     <div className="header">
       <div className='header__container'>
-        <h1 className="header__container__text">Work Orders</h1>
+        <h1 className="header__container__text">Vendors</h1>
         <div className='header__btnContainer'>
           <Button
-            className={`headerBtn ${activeButton === 'todo' ? 'active' : ''}`}
-            onClick={() => toggleIconContent('todo')}
+            className={`headerBtn ${activeButton === 'vendors' ? 'active' : ''}`}
+            onClick={() => toggleIconContent('vendor')}
           >
             <GoColumns />
           </Button>
@@ -30,17 +35,9 @@ const Header = ({ setShowIconContent }) => {
           >
             <GoTable />
           </Button>
-          <Button
-            className={`headerBtn ${activeButton === 'calendar' ? 'active' : ''}`}
-            onClick={() => toggleIconContent('calendar')}
-          >
-            <IoCalendarClearOutline />
-          </Button>
         </div>
       </div>
-      <div className="header__filterContainer">
-        <Filter />
-      </div>
+      <Filter onButtonClick={handleButtonClick}/>
     </div>
   );
 };

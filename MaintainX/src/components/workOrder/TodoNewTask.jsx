@@ -1,16 +1,17 @@
 import { useState, useRef, useEffect } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
-import { FaCheck } from "react-icons/fa6";
+import { FaCheck } from 'react-icons/fa6';
+// import PropTypes from 'prop-types';
 
 const FilterDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState('Earliest First'); // Set default sub-option
-  const [selectedMainOption, setSelectedMainOption] = useState('Due Date'); // Set default main option
+  const [selectedOption, setSelectedOption] = useState('Earliest First');
+  const [selectedMainOption, setSelectedMainOption] = useState('Due Date');
   const dropdownRef = useRef(null);
 
   const options = [
     {
-        label: 'Unread First'
+      label: 'Unread First',
     },
     {
       label: 'Creation Date',
@@ -57,13 +58,13 @@ const FilterDropdown = () => {
   }, []);
 
   return (
-    <div ref={dropdownRef}>
-
+    <div className="filter-dropdown" ref={dropdownRef}>
+      <div className="dropdown-header">
         <button onClick={toggleDropdown} className="dropdown__button">
-        {selectedMainOption ? `${selectedMainOption}: ${selectedOption}` : {selectedOption}}
+          {selectedMainOption ? `${selectedMainOption}: ${selectedOption}` : selectedOption}
         </button>
-        
-        <div className="dropdown">
+      </div>
+      <div className={`dropdown ${isOpen ? 'open' : ''}`}>
         {isOpen && (
           <ul className="filterList">
             {options.map((mainOption) => (
@@ -72,11 +73,7 @@ const FilterDropdown = () => {
                   {mainOption.label}{' '}
                   {mainOption.subOptions && (
                     <span className="filterList__item__div__flex">
-                      {selectedMainOption === mainOption.label ? (
-                        <FaChevronUp />
-                      ) : (
-                        <FaChevronDown />
-                      )}
+                      {selectedMainOption === mainOption.label ? <FaChevronUp /> : <FaChevronDown />}
                     </span>
                   )}
                 </div>
@@ -84,9 +81,11 @@ const FilterDropdown = () => {
                   <ul>
                     {mainOption.subOptions.map((subOption) => (
                       <li key={subOption} onClick={() => selectOption(subOption)}>
-                       {subOption}{' '}
+                        {subOption}{' '}
                         {selectedOption === subOption && (
-                          <span className="tick-icon"><FaCheck/></span>
+                          <span className="tick-icon">
+                            <FaCheck />
+                          </span>
                         )}
                       </li>
                     ))}
@@ -100,5 +99,9 @@ const FilterDropdown = () => {
     </div>
   );
 };
+
+// FilterDropdown.propTypes = {
+//   // Add prop types as needed
+// };
 
 export default FilterDropdown;

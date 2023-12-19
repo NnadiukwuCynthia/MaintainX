@@ -7,7 +7,6 @@
 
     &:hover{
         color: color.$custom-blue;
-        background-color: color.$shadow-blue;
         transition: .30s ease-in-out;
     }
 }
@@ -27,6 +26,10 @@
     border-radius: 5px;
 }
 
+.active{
+    color: color.$custom-blue;
+    background-color: color.$shadow-blue;
+}
 .threeBtn__button{
     @extend %todoBtn-text;
     font-size: 14px;
@@ -79,4 +82,16 @@
         padding-inline-end: 2px;
         color: color.$custom-blue;
     }
+}
+
+.newPurchaseOrderBtn{
+        width: 180px;
+        height: 45px;
+        background-color: color.$custom-blue;
+        @extend %filterBtn; 
+        border: none;
+        border-radius: 5px; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 }
