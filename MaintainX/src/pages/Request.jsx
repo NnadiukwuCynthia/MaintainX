@@ -1,8 +1,10 @@
+import {useState} from 'react';
+import Request from '../components/Request/Request'; 
 
-const Request = () => {
+const Req = () => {
   return (
-    <div>Request</div>
+    <Request/>
   )
 }
 
-export default Request
+export default Req

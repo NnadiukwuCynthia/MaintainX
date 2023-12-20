@@ -1,8 +1,9 @@
-
-const Messages = () => {
+import {useState} from 'react';
+import Messages from "../components/messages/messages"
+const messag = () => {
   return (
-    <div>Messages</div>
+    <Messages/>
   )
 }
 
-export default Messages
+export default messag
